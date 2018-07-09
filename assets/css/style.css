@@ -9,9 +9,9 @@ body {
 	background-image: url(../images/penguin.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-size: cover;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Archivo Narrow', sans-serif;
 	font-size: 20px;
 }
 nav {
@@ -25,16 +25,28 @@ nav {
 
 nav > a {
 
-	margin: 20px;
+	margin: 45px;
+	color: inherit; 
+	text-decoration:none
+}
+
+a:hover {
+	text-decoration:underline;
+	transform: 1;
 }
 
 .container {
-	margin-top:100px;
-	width: 700px;
-	height: 600px;
+	margin-top:40px;
+	width: 520px;
+	height: 550px;
 	float: left;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin-left: 600px;
+	padding-right: 10px;
+	border-radius: 10px;
+	margin-right: 10px;
+	background-color: rgba(72, 55, 72, 0.2);
+	box-shadow: 5px 5px 20px grey;
 
 }
 
@@ -46,8 +58,9 @@ nav > a {
 
 h1 {
 	font-size: 70px;
-	font-family: 'Josefin Sans', sans-serif;
-	margin-top: 50px;
+	font-family: 'Pacifico', cursive;
+	margin-top: 20px;
+	text-align: center;
 }
 
 p {
@@ -57,21 +70,71 @@ p {
 }
 
 .border_container {
-	background-color: red;
+	/*background-color: red;*/
 	width: 500px;
 	height: 500px;
 	padding: 20px 0;
 	margin: 10px;
 }
 
-form >input {
-	width: 200px;
-	height: 30px;
-	margin: 5px;
-	margin-left: 50px
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-}	
+input[type=submit] {
+    width: 100%;
+    background-color: #B67523;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
 
-form > button {
+input[type=submit]:hover {
+    background-color: #8E7557;
+}
 
+
+
+
+
+.footercontainer {
+	height: 150px;
+	width: 1350px;
+	/*border: 1px solid black;*/
+	display: block;
+	float: left;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	margin-top: 56px;
+	/*background-color: #565A5D;*/
+	margin-bottom: 0;
+
+}
+
+.fab {
+	font-size: 1.5em;
+	margin: 0 30px;
+}
+
+.copyright {
+	margin: 10px;
+	/*border: 1px solid black;*/
+	text-align: center;
+	font-size: 10px;
+	background-color: none;
+}
+
+span {
+	margin-left: 2em;
 }
